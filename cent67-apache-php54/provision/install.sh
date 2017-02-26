@@ -25,7 +25,7 @@ php-intl php-mbstring php-pdo php-pear.noarch php-xml php-mcrypt
 
 ### Apache Setting
 sed -i -e "/AddType text\/html \.php/i\AddType application\/x-httpd-php \.php \.html" /etc/httpd/conf.d/php.conf
-chkconfig iptables on
+chkconfig httpd on
 
-### Service Start
+### Apache Start
 service httpd start
